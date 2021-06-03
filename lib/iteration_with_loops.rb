@@ -6,7 +6,7 @@ def find_min_in_nested_arrays(src)
     
     while inner < src[outer].length do
       min = src[outer][inner]
-      if src[outer][inner]%2 == 0
+      if src[outer][inner] < min
         puts src[outer][inner]
       end
       inner += 1
